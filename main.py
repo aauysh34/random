@@ -22,13 +22,6 @@ def ring(col, rad):
     pen.end_fill()
 
 
-##########################Main Section#############################
-
-# pen.up             --> move turtle to air
-# pen.down           --> move turtle to ground
-# pen.setpos         --> move turtle to given position
-# ring(color, radius) --> draw a ring of specified color and radius
-###################################################################
 
 ##### Draw ears #####
 # Draw first ear
