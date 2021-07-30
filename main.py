@@ -8,7 +8,6 @@ pen = turtle.Turtle()
 # adjusting pen speed
 pen.speed(1)
 
-
 # with a dynamic radius
 def ring(col, rad):
     # Set the fill
