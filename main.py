@@ -5,8 +5,10 @@ import turtle
 # Creating a turtle object(pen)
 pen = turtle.Turtle()
 
+# adjusting pen speed
+pen.speed(1)
 
-# Defining method to draw a colored circle
+
 # with a dynamic radius
 def ring(col, rad):
     # Set the fill
@@ -22,43 +24,32 @@ def ring(col, rad):
     pen.end_fill()
 
 
-
-##### Draw ears #####
-# Draw first ear
+# Draw ears
+# first ear
 pen.up()
 pen.setpos(-35, 95)
 pen.down()
 ring('black', 15)
 
-# Draw second ear
+# second ear
 pen.up()
 pen.setpos(35, 95)
 pen.down()
 ring('black', 15)
 
-##### Draw face #####
+# Draw face
 pen.up()
 pen.setpos(0, 35)
 pen.down()
 ring('white', 40)
 
-##### Draw eyes black #####
-
+# Draw eyes black
 # Draw first eye
 pen.up()
 pen.setpos(-18, 75)
 pen.down()
 ring('black', 8)
 
-# Draw second eye
-pen.up()
-pen.setpos(18, 75)
-pen.down()
-ring('black', 8)
-
-##### Draw eyes white #####
-
-# Draw first eye
 pen.up()
 pen.setpos(-18, 77)
 pen.down()
@@ -66,17 +57,22 @@ ring('white', 4)
 
 # Draw second eye
 pen.up()
+pen.setpos(18, 75)
+pen.down()
+ring('black', 8)
+
+pen.up()
 pen.setpos(18, 77)
 pen.down()
 ring('white', 4)
 
-##### Draw nose #####
+# Draw nose
 pen.up()
 pen.setpos(0, 55)
 pen.down()
-ring('white',5 )
+ring('white', 5)
 
-##### Draw mouth #####
+# Draw mouth
 pen.up()
 pen.setpos(0, 55)
 pen.down()
